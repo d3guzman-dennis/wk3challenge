@@ -69,6 +69,7 @@ function generatePassword() {
   } 
    
 }
+
 //console.log(genpass);
 //if (Qspec == false && Qnum == false && Qualpha == false && Qalpha == false){
   //alert("You must allow at least one type of character to generate a password./n Try again.");
@@ -83,13 +84,13 @@ function writePassword() {
   
   var password = generatePassword();
   var passwordText = document.querySelector("#ipassword");
-  passwordText.value = password;
-  console.log(passwordText);
+  passwordText.textContent = password;
+  
 
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword() );
+
 Falpha(); Fualpha(); Fnum(); Fspec();
-//console.log(passwordText);
-//console.log(ipassword);
+
